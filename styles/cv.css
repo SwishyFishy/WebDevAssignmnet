@@ -1,0 +1,273 @@
+@import url(reset.css);
+@import url(defaults.css);
+
+:root{
+    background: repeating-conic-gradient(black, var(--text-highlight) 10%, black 33%);
+    margin: 0%;
+    overflow-y: clip;
+    scrollbar-width: none;
+}
+body{
+    display: grid;
+    grid-template-columns: 5% 35% 70%;
+    margin: 3% 10% 10% 10%;
+}
+
+/*Main CV*/
+/*Sidebar section*/
+#sidebar{
+    display: grid;
+    grid-template-rows: 60fr 10fr 30fr;
+
+    background-color: var(--background);
+    height: 80vh;
+
+    margin: 30% 0%;
+}
+#sidebar h2{
+    text-align: center;
+    padding-top: .75em;
+}
+#sidebar h2 a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    color: var(--header);
+}
+#sidebar a{
+    text-align: center;
+    font-size: 2em;
+    color: var(--header);
+}
+
+/*Me section*/
+#me{
+    background-image: url("../img/me.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+#me h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: .1em .1em .1em black;
+    
+    padding-bottom: .5em;
+}
+#me h2{
+    font-weight: bold;
+    text-shadow: .1em .1em .1em black;
+    color: var(--header);
+
+    padding-bottom: 2.5em;
+}
+#me ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 1em;
+}
+#me ul li a{
+    font-size: 1.2em;
+    color: var(--text);
+    margin: 1.75em;
+}
+#me ul li a:hover{
+    color: var(--header);
+}
+
+/*Info section*/
+#info{
+    background-color: var(--background);
+    height: 80vh;
+    width: 45vw;
+
+    padding: 0em 1em;
+    margin: 2% 0%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+/*Intro*/
+#info #intro, #info #skills, #info #prior, #info #addresses{
+    padding: 2.5em 0em;
+    border-bottom: .1em solid var(--text-highlight);
+}
+#info #intro h2{
+    font-size: 5em;
+    font-weight: bold;
+    padding: .75em 0em .25em 0em;
+}
+#info #intro ul{
+    display: flex;
+    flex-direction: row;
+
+    color: var(--header);
+}
+#info #intro ul li:first-child::after, #info #intro ul li:nth-child(2)::after{
+    content: " /\00a0";
+}
+/*Skills*/
+#info #skills h3 i, #info #prior th i{
+    color: var(--header);
+    padding-right: .5em;
+}
+#info #skills h3{
+    font-size: 2.5em;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+#info #skills dl dt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-weight: bold;
+    color: var(--header);
+}
+#info #skills dl dt span, #info #skills dl dt:nth-last-child(2){
+    padding-bottom: .5em;
+    color: var(--text);
+}
+#info #skills dl dd{
+    width: 100%;
+    padding-bottom: 1em;
+}
+#info #skills dl dd .progress-meter-grey{
+    width: 100%;
+    height: .4em;
+    background-color: var(--text-highlight);
+}
+#info #skills dl dd .progress-meter-orange{
+    height: .4em;
+    background-color: var(--header);
+    margin-top: -.4em;
+}
+#info #skills dl dd .progress-meter-83{
+    width: 83%;
+}
+#info #skills dl dd .progress-meter-92{
+    width: 92%;
+}
+#info #skills dl dd .progress-meter-75{
+    width: 75%;
+}
+#info #skills dl dd ul{
+    padding-left: 1em;
+    line-height: 1.2;
+}
+#info #skills dl dd ul li{
+    list-style: disc;
+}
+/*Prior life*/
+#info #prior{
+    border-bottom: none;
+}
+#info #prior table tr th{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+#info #prior table tr td{
+    width: 50%;
+    padding: 0em .5em;
+}
+#info #prior table tr td p:first-child{
+    font-size: .8em;
+    color: var(--header);
+    padding-top: 1.5em;
+    padding-bottom: 1.25em;
+}
+#info #prior table tr td h4{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#info #prior table tr td p:nth-child(3){
+    font-size: .8em;
+    padding: 1em 0em;
+}
+
+
+
+/*Contact page*/
+/*Contact section*/
+#info #addresses img{
+    width: 90%;
+    height: auto;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+#info #addresses table{
+    margin: 3em 1em 1em 1em;
+}
+#info #addresses table tr{
+    padding: 1em;
+}
+#info #addresses table tr td{
+    padding: 1em;
+}
+#info #addresses table tr td p{
+    font-size: .9em;
+}
+#info #addresses table tr td p i{
+    color: var(--header);
+    padding-right: .5em;
+}
+/*Direct section*/
+#info #direct h3{
+    font-size: 2.5em;
+    font-weight: bold;
+
+    padding-top: 1.5em;
+}
+#info #direct form{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+#info #direct form input[type="text"], #info #direct form textarea{
+    padding: .75em 0em;
+    border: none;
+    border-bottom: .1em solid var(--text-highlight);
+    margin: 1.5em 0em;
+
+    font-size: 1.2em;
+    background-color: var(--background);
+    color: var(--text);
+}
+#info #direct form textarea{
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    scrollbar-width: none;
+}
+#info #direct form input[type="text"]:focus, #info #direct form textarea:focus{
+    outline: none;
+    border-bottom: .1em solid var(--header);
+}
+#info #direct form input[type="submit"]{
+    background-color: var(--header);
+    width: 10em;
+
+    color: var(--text);
+    font-weight: bold;
+
+    padding: .5em;
+    border: none;
+    margin-bottom: 3em;
+}
+/*Footer*/
+footer{
+    grid-column: 1 / span 3;
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    color: var(--text);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://kit.fontawesome.com/ffbf9c5c28.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/cv.css" />
+    <title>Assignment 3 CV Contact</title>
+</head>
+<body>
+    <section id="sidebar">
+        <h2><a href="index.html">JGF</a></h2>
+        <a href="cv.html"><i class="fa-solid fa-user"></i></a>
+        <a href="cv-contact.html"><i class="fa-solid fa-comment" ></i></a>
+    </section>
+
+    <section id="me">
+        <h1>Jonah Galloway-Fenwick</h1>
+        <h2>Swing Manager</h2>
+        <ul>
+            <li><a href="https://github.com/JGallowayFenwick?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+    </section>
+
+    <section id="info">
+        <div id = "addresses">
+            <img src="img/newmap.png" alt="A Google maps view of my address" width="397" height="302"/>
+            <table>
+                <tr>
+                    <td>
+                        <p><i class="fa-solid fa-location-dot"></i>212 Barnardo Ave. Peterborough, ON</p>
+                    </td>
+                    <td>
+                        <p><i class="fa-solid fa-envelope"></i> <span class="email">jonahgallowayfenwick@trentu.ca</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><i class="fa-solid fa-phone"></i>(123) 456-7890</p>
+                    </td>
+                    <td>
+                        <p><i class="fa-solid fa-envelope"></i> <span class="email">trentmtgcommunity@gmail.com</span></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="direct">
+            <h3>send message</h3>
+            <form>
+                <input type="text" id="fname" name="fname" placeholder="first name" />
+                <input type="text" id="lname" name="lname" placeholder="last name" />
+                <input type="text" id="email" name="email" placeholder="email" />
+                <textarea id="message" name="message" placeholder="message" wrap="soft" rows="4" cols="50"></textarea>
+                <input type="submit" id="submitbutton" name="submitbutton" value="send message" />
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <span>&copy; 2024 Jonah Galloway-Fenwick</span>
+        <span>Page design pulled from <a href="https://renuvo-128.webflow.io/resume" target="_blank">Webflow.io</a></span>
+    </footer>
+</body>
+</html>
